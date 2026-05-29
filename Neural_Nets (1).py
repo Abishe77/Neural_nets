@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[44]:
+# In[3]:
 
 
 from tensorflow.keras.datasets import mnist #This tesnorflow is only for dataset 
@@ -36,7 +36,7 @@ INTUITION BEHIND THE CODE : (Forward pass own logic) , Setup : 2 hidden layers 1
  (Higher the value for a neuron more likely the prediction)'''
 
 x_train = x_train.T 
-x_test = x_test.T #For training
+x_test = x_test.T #For testing
 
 
 #First initialize the parameters
@@ -71,7 +71,7 @@ def softmax(z): # goes like s = e^z(i) / sumof(e^z(j)) where j = z2(1),z2(2),z2(
 
 #Intialize the weights once 
 W1 , b1 , W2 , b2 = init_parameters()
-result = forward_pass (x_train ,W1 , b1 , W2,b2)
+result = forward_prop (x_train ,W1 , b1 , W2,b2)
 
 '''
 Now comes the Loss function 
