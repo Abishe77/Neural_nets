@@ -89,7 +89,7 @@ tensorflow  ← dataset only (mnist.load_data())
 
 ## Built With
 
-- Python
+- Jupyter Notebook
 - NumPy (all math)
 - Matplotlib (visualization)
 - A strong understanding of linear algebra and calculus
